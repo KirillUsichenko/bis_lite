@@ -8,6 +8,12 @@ html {
   box-sizing: inherit;
 }
 
+
+body{
+  margin: 0;
+  padding: 0;
+   font-family: "Lato", sans-serif;
+}
 a {
   color: #000;
   display: inline-block;
@@ -31,6 +37,7 @@ li {
 
 .header {
   background-color: #e8ebf1;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.07);
 }
 
 .header__inner {
@@ -43,7 +50,6 @@ li {
 .header__logo a {
   color: #2acac8;
   font-size: 50px;
-  font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 
@@ -142,13 +148,11 @@ li {
   transition: all 0.3s;
 }
 
-
-
 .header__drop-down.drop-down:hover .drop-down__list {
-    height: auto;
-    overflow: visible;
-    opacity: 1;
-      transition: all 0.3s;
+  height: auto;
+  overflow: visible;
+  opacity: 1;
+  transition: all 0.3s;
 }
 
 .header__drop-down.drop-down:hover > a {
@@ -156,4 +160,73 @@ li {
   border-top: 5px solid #2acac8;
   background-color: #fff;
   transition: all 0.3s;
+}
+
+.slider {
+  background-color: #81e4ed;
+  padding: 20px 0px 10px;
+}
+
+.slider__item{
+  background-image: url(../images/slider-bg.jpg);
+  min-height: 440px;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slider__item-title{
+  font-size: 50px;
+  color: #ffffff;
+  width: 300px;
+  margin-left: 60px;
+  font-weight: 700;
+  padding-top: 90px;
+}
+
+.slick-dots li button{
+  width: 14px;
+  height: 14px;
+  background-color: rgba(98, 98, 98, .5);
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button{
+  background-color: #fff;
+}
+
+.slick-dots li button::before{
+  display: none;
+}
+
+.slick-dots li{
+  margin: 0 9px;
+  height: auto;
+  width: auto;
+}
+
+.items{
+  background-color: #e8ebf1;
+  padding: 60px 0px 50px;
+}
+
+.items__inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.item{
+  width: 225px;
+  font-family: 'arial', sans-serif;
+}
+
+.item__title{
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-left: 60px;
+  padding: 10px 0 0 60px ;
+  margin-bottom: 30px;
 }
